@@ -84,7 +84,12 @@ li {
     list-style: none;
 }
 
-nav>button {
+.btn-div {
+    display: flex;
+    gap:2.5rem;
+}
+
+nav>.btn-div>button {
     background-color: var(--base-white);
     color: var(--base-black);
     padding: 0.5rem 1rem;
@@ -92,15 +97,17 @@ nav>button {
     font-size: var(--font-onesix);
     font-weight: var(--font-bold);
     border-radius: 12px;
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
     z-index: 10;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     padding-top: 5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .head-img {
@@ -114,7 +121,7 @@ header {
 }
 
 header>h1 {
-    font-size: var(--font-ninesix);
+    font-size: var(--font-sixfour);
     width: 60%;
     font-weight: var(--font-semibold);
     margin: 0;
@@ -148,13 +155,13 @@ header>p {
 }
 
 .store-img>img {
-    width: 11.5rem;
+    width: 9.5rem;
 }
 
 .food-type {
     display: flex;
     gap: 2rem;
-    margin: 5rem 0;
+    margin: 2.5rem 0 5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -233,7 +240,7 @@ header>p {
 }
 
 .aboutCompany {
-    margin-block: 5rem;
+    margin-block: 5rem 5rem;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
