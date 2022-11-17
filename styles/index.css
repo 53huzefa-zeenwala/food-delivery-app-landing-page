@@ -1,42 +1,42 @@
 :root {
-    /* document color  */
-    --base-black: #000000;
-    --base-white: #fff;
-    --black-lite-var: #222;
-    --primary-color: #ff6e4e;
-    --secondary-color: #f29c4d;
-    --secondary-color-lite: rgba(242, 77, 91, 30%);
-    --gray-one: #f6f6f6;
-    --gray-two: #bdbdbd;
+  /* document color  */
+  --base-black: #000000;
+  --base-white: #fff;
+  --black-lite-var: #222;
+  --primary-color: #ff6e4e;
+  --secondary-color: #f29c4d;
+  --secondary-color-lite: rgba(242, 77, 91, 30%);
+  --gray-one: #f6f6f6;
+  --gray-two: #bdbdbd;
 
-    /* document font  */
-    --font-ninesix: 92px;
-    --font-twozero: 20px;
-    --font-twotwo: 22px;
-    --font-threetwo: 32px;
-    --font-sixfour: 60px;
-    --font-onesix: 16px;
+  /* document font  */
+  --font-ninesix: 92px;
+  --font-twozero: 20px;
+  --font-twotwo: 22px;
+  --font-threetwo: 32px;
+  --font-sixfour: 60px;
+  --font-onesix: 16px;
 
-    /* font weight  */
-    --font-medium: 500;
-    --font-semibold: 600;
-    --font-bold: 700;
+  /* font weight  */
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
-    position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  position: relative;
 }
 
 a {
@@ -48,15 +48,191 @@ nav,
 header,
 main,
 footer {
-    padding-inline: 3rem;
+  padding-inline: 3rem;
 }
 
 .logo {
-    font-size: var(--font-sixfour);
-    font-family: 'Ingrid Darling', cursive;
+  font-size: var(--font-sixfour);
+  font-family: "Ingrid Darling", cursive;
 }
 
-.logo>span {
-    font-family: 'Ingrid Darling', cursive;
-    color: var(--primary-color);
+.logo > span {
+  font-family: "Ingrid Darling", cursive;
+  color: var(--primary-color);
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  font-size: var(--font-twozero);
+}
+.nav > ul > .active,
+.nav > ul > li:hover,
+.nav > ul > li:hover {
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.btn-div {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav > .btn-div > button {
+  background-color: var(--base-white);
+  color: var(--base-black);
+  padding: 0.5rem 1rem;
+  height: fit-content;
+  font-size: var(--font-onesix);
+  font-weight: var(--font-bold);
+  border-radius: 12px;
+  /* margin-right: 10rem; */
+  z-index: 10;
+}
+
+.primary {
+  width: fit-content;
+  font-size: var(--font-onesix);
+  color: var(--base-white);
+  background-color: var(--primary-color);
+  padding: 0.75rem 2.5rem;
+  border-radius: 16px;
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: color, background-color 0.25s ease;
+  border: 0;
+}
+
+.primary:hover {
+  color: var(--primary-color);
+  background-color: var(--base-white);
+}
+
+.rating {
+    position: relative;
+}
+.rating > img {
+  width: 1rem;
+  height: 1.5rem;
+}
+
+.store-img {
+  display: flex;
+  gap: 1rem;
+}
+
+.store-img>img {
+  width: 9.5rem;
+}
+
+footer {
+  background-color: var(--black-lite-var);
+  margin-top: 10rem;
+}
+
+footer>.heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer>.heading-section>.logo {
+  color: var(--base-white);
+}
+
+footer>.heading-section>.navLink {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  font-size: var(--font-twozero);
+  color: var(--gray-two);
+  cursor: pointer;
+}
+
+
+footer>.heading-section>.socialLink {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+}
+
+footer>.heading-section>.socialLink>li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--gray-two);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: scale 0.25s;
+}
+
+footer>.heading-section>.socialLink>li:hover {
+  scale: 1.1;
+}
+
+footer>.heading-section>.socialLink>li>img {
+  width: 1.5rem;
+}
+
+footer>.detail-section>.getApp {
+  position: relative;
+  margin-top: 1rem;
+}
+
+footer>.detail-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+footer>.detail-section>div>h4 {
+  color: var(--base-white);
+  font-size: var(--font-twotwo);
+}
+
+footer>.detail-section>.aboutApp>p {
+  color: var(--gray-two);
+  width: 45%;
+  font-size: var(--font-onesix);
+}
+
+footer>.detail-section>.getApp>h4 {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+
+.copyright {
+  background-color: var(--base-black);
+  color: var(--base-white);
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-onesix);
+  gap: .5rem;
+  padding-block: 0.5rem;
+}
+
+.copyright>span {
+  color: var(--primary-color);
+}
+
