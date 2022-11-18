@@ -1,0 +1,120 @@
+nav {
+    background-color: var(--base-black);
+    color: var(--base-white);
+}
+main {
+    padding-block: 2rem;
+    display: flex;
+    gap: 3rem;
+    padding-inline: 7rem;
+}
+main > section {
+    width: 50%;
+}
+
+.imageDiv {
+
+}
+
+.imageDiv>.majorImg>img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.minorImg {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+    overflow: hidden;
+}
+
+.minorImg > img {
+    object-fit: cover;
+    height: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.detailDiv > h1 {
+    font-size: 35px;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+
+.detailDiv > .tag {
+    font-size: var(--font-onesix);
+    color: var(--gray-two);
+    font-weight: var(--font-semibold);
+    padding-block: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating > span {
+    padding-left: 0.5rem;
+}
+
+.detailDiv > .description {
+    padding-block: 0.5rem;
+    font-size: var(--font-onesix);
+    font-weight: var(--font-medium);
+    line-height: 22px;
+}
+
+.priceDiv, .quatity {
+    /* border-top: 1px solid var(--base-black);
+    border-bottom: 1px solid var(--base-black); */
+    /* margin-block: 0.5rem; */
+    padding-block: 0.5rem;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    color: var(--black-lite-var);
+    font-weight: var(--font-bold);
+}
+
+.priceDiv > .price {
+    font-size: 20px;
+}
+
+.quatity > ul {
+    display: flex;
+    gap: 0.25rem;
+}
+.quatity > ul > li {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--base-black);
+}
+.quatity > ul > .active {
+    border: 1px solid  var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--base-white);
+}
+
+.detailDiv > button {
+    font-size: var(--font-twozero);
+    width: 60%;
+    font-weight: var(--font-semibold);
+    padding-block: 0.5rem;
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--base-white);
+    border-radius: 8px;
+    margin-block: 0.5rem;
+    cursor: pointer;
+}
+
+.detailDiv > button:hover {
+    color: var(--secondary-color);
+    background: var(--base-white);
+    
+}

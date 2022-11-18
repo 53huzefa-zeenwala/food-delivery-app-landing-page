@@ -71,7 +71,7 @@ header>p {
     gap: 2rem;
 }
 
-.food-type>ul>li {
+.food-type>ul>a>li {
     height: 15rem;
     border-radius: 16px;
     width: 15rem;
@@ -84,7 +84,7 @@ header>p {
     gap: 0.5rem;
 }
 
-.food-type>ul>li>div {
+.food-type>ul>a>li>div {
     height: 4.5rem;
     border-radius: 50%;
     width: 4.5rem;
@@ -94,7 +94,7 @@ header>p {
     background-color: rgba(255, 110, 77, 0.25);
 }
 
-.food-type>ul>li>p {
+.food-type>ul>a>li>p {
     font-weight: var(--font-semibold);
     font-size: var(--font-twotwo);
 }
@@ -110,13 +110,13 @@ header>p {
     border-radius: 8px;
 }
 
-.food-type>ul>li,
+.food-type>ul>a>li,
 .arrow-button {
     cursor: pointer;
     transition: transform 0.25s ease;
 }
 
-.food-type>ul>li:hover,
+.food-type>ul>a>li:hover,
 .arrow-button:hover {
     transform: scale(1.1);
 }
@@ -446,7 +446,7 @@ header>p {
 
 
 .popularMenu>.items>.one {
-    background: url("./img/OIP (2).png");
+    background: url("/img/OIP\ \(2\).png");
     background-color: #000000;
     background-position: center;
     background-size: contain;
@@ -454,14 +454,14 @@ header>p {
 }
 
 .popularMenu>.items>.two {
-    background: url("./img/OIP.jfif");
+    background: url("/img/OIP.jfif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .popularMenu>.items>.three {
-    background: url("./img/5d50eaf351ecd.webp");
+    background: url("/img/5d50eaf351ecd.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

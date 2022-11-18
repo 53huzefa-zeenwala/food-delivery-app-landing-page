@@ -8,7 +8,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding:1rem;
     border-bottom: 1px solid var(--base-black);
 }
 
@@ -18,12 +18,19 @@ nav {
     align-items: center;
 }
 
-.filter > ul > li {
-    color: var(--gray-two);
-    font-weight: var(--font-semibold);
-}
 .filter > ul > .active, .filter > ul > li:hover {
+    color: var(--base-white);
+    background-color: var(--base-black);
+}
+
+.filter > ul > li {
     color: var(--base-black);
+    font-weight: var(--font-semibold);
+    background-color: var(--gray-two);
+    padding: 0.5rem 0.75rem;
+    border-radius: 3px;
+    font-size: var(--font-onesix);
+    font-weight: var(--font-semibold);
 }
 
 .filter > ul > .category {
@@ -49,7 +56,7 @@ nav {
     margin-top: 2rem;
     border-radius: 16px;
     overflow: hidden;
-    height: 16rem;
+    height: 18rem;
 }
 .feature > div {
    width: 50%;
@@ -65,13 +72,17 @@ nav {
 
 .feature > .text > h2 {
     color: var(--primary-color);
-    font-size: var(--font-sixfour);
+    font-size: 55px;
     margin-top: 1rem;
 }
 .feature > .text > p {
-    color: var(--gray-one);
+    color: var(--gray-two);
     font-size: var(--font-onesix);
-    margin-bottom: 2rem;
+}
+.feature > .text > div {
+    font-size: var(--font-threetwo);
+    font-weight: var(--font-bold);
+    padding-block: 0.75rem;
 }
 
 .feature > .img > img{
@@ -107,7 +118,6 @@ nav {
     justify-content: space-between;
     flex-direction: column;
     height: calc(var(--product-size) - 2);
-    align-items: flex-end;
 }
 
 
@@ -122,6 +132,13 @@ nav {
     color: var(--black-lite-var);
     font-size: var(--font-onesix);
     padding-block: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 18px;
+    max-height: 60px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .productText > .text > .price {
@@ -129,4 +146,22 @@ nav {
     font-size: var(--font-twotwo);
     margin-block: 0.25rem 0.5rem;
     display: block;
+}
+.product-buy-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.product-buy-rating > button {
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-onesix);
+    font-weight: var(--font-semibold);
+    border: 2px solid var(--base-black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-buy-rating > button:hover {
+    color: var(--base-white);
+    background-color: var(--base-black);
 }
