@@ -1,20 +1,29 @@
-body {
+.mainDiv {
     display: flex;
     padding-block: 3.5rem;
     padding-inline: 10rem;
-    background-color: var(--secondary-color);
+    background-color: var(--gray-one);
 }
 
 main {
     width: 100%;
     display: flex;
-    box-shadow: 0px 0px 25px 10px rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 40px 5px rgb(0 0 0 / 50%);
     padding-inline: 0;
+}
+
+nav {
+    background-color: var(--base-black);
+    color: var(--base-white);
 }
 
 main > div {
     width: 50%;
     background-color: var(--gray-one);
+}
+
+footer {
+    margin-top: 0;
 }
 
 .formDiv {

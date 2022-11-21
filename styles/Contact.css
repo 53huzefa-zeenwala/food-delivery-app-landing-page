@@ -1,0 +1,73 @@
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 20%;
+}
+nav {
+    background-color: var(--base-black);
+    color: var(--base-white);
+}
+
+main > h1 {
+    font-size: 45px;
+}
+
+.input {
+    display: flex;
+    gap: 2rem;
+}
+
+.input > div {
+    width: 50%;
+}
+
+ .textarea, .input > div {
+    padding-top: 0.75rem;
+}
+
+.input > div, .textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+input, textarea, select {
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    background-color: var(--gray-one);
+    border: 2px solid var(--gray-one);
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+    height: 5rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: var(--font-semibold);
+}
+input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:focus {
+    border-color: #000;
+}
+
+form > button {
+    padding:0.35rem ;
+    width: 40%;
+    font-size: 0.9rem;
+    font-weight: var(--font-semibold);
+    background-color: var(--base-black);
+    color: var(--base-white);
+    margin-top: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+}
+
+form > button:hover, form > button:focus {
+    background-color: var(--base-white);
+    color: var(--base-black);
+}

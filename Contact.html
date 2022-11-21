@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Landing Page</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/Login.css" />
+    <link rel="stylesheet" href="./styles/Contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./Products.html">Products</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li class="active"><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="btn-div">
@@ -29,43 +29,64 @@
         <button><a href="./Login.html">Login</a></button>
       </div>
     </nav>
-    <div class="mainDiv">
+    <!--  main page start here -->
     <main>
-      <div class="formDiv">
-        <div class="logo"><span>Fo</span>odie</div>
-        <div class="formOuter">
+      <h1>
+        Love to hear from you, <br />
+        Get in touch <span>👋</span>
+      </h1>
+      <form action="">
+        <section class="input">
           <div>
-            <h1>Welcome Back!</h1>
-            <p>Get Delicious Food Right Now</p>
+            <label for="name">Your name</label>
+            <input type="text" name="name" placeholder="John deo" required />
           </div>
-          <form action="" class="form">
-            <div class="input">
-              <label for="username">Email</label>
-              <input type="text" name="username" />
-            </div>
-            <div class="input">
-              <label for="Password">Password</label>
-              <input type="text" name="Password" />
-            </div>
-            <div class="forgot">
-              <div>
-                <input type="checkbox" name="game" id="" />
-                <label for="game">Remember</label>
-              </div>
-              <div>Forgot Password?</div>
-            </div>
-            <button type="submit">Login</button>
-          </form>
-          <button class="googleButton">
-            <img src="./img/google-svgrepo-com.svg" alt="Google Icon" />Continue
-            with Google
-          </button>
+          <div>
+            <label for="email">Your email</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="johndeo@xxxx.com"
+              required
+            />
+          </div>
+        </section>
+        <section class="input">
+          <div>
+            <label for="contact">Your contact number</label>
+            <input
+              type="tel"
+              name="contact"
+              placeholder="+91xxxxxxxxxx"
+              required
+            />
+          </div>
+          <div>
+            <label for="interest">What are you intrested in</label>
+            <select name="interest" id="" required>
+              <option value="service">Customer service</option>
+              <option value="Order">Order</option>
+              <option value="consult">Consult</option>
+              <option value="complain">Complain</option>
+            </select>
+          </div>
+        </section>
+        <div class="textarea">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id=""
+            minlength="10"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Tell us about your consult"
+          ></textarea>
         </div>
-        <div class="isAccount">Don't have an account? <span><a href="./Registration.html">Sign up</span></a></div>
-      </div>
-      <div class="img"><img src="./img/login-cover-image.PNG" alt="" /></div>
+        <button>Just Send ↗</button>
+      </form>
     </main>
-    </div>
+
     <footer>
       <div class="heading-section">
         <div class="logo"><span>Fo</span>odie</div>

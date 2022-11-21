@@ -167,6 +167,11 @@ footer>.heading-section>.navLink {
   cursor: pointer;
 }
 
+.navLink > li:hover {
+  color: var(--base-white);
+
+}
+
 
 footer>.heading-section>.socialLink {
   display: flex;
@@ -232,7 +237,7 @@ footer>.detail-section>.getApp>h4 {
   padding-block: 0.5rem;
 }
 
-.copyright>span {
+.copyright>span {                               
   color: var(--primary-color);
 }
 

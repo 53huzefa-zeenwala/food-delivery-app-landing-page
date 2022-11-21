@@ -9,7 +9,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding:1rem;
-    border-bottom: 1px solid var(--base-black);
+    position: sticky;
+    top: 0;
+    background-color: rgb(239 239 239 / 95%);
+    z-index: 10;
 }
 
 .filter > ul {
@@ -40,20 +43,20 @@ nav {
     cursor: default;
 }
 .filter > button {
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
     border: 1px solid var(--base-black);
     background-color: var(--base-white);
     border-radius: 4px;
     cursor: pointer;
     font-weight: 700;
-    font-size: var(--font-onesix);
+    font-size: 0.9rem;
 }
 
 .feature {
     background-color: var(--base-black);
     color: var(--base-white);
     display: flex;
-    margin-top: 2rem;
+    margin-block: 2rem;
     border-radius: 16px;
     overflow: hidden;
     height: 18rem;
@@ -96,7 +99,7 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 5rem 0rem;
 }
 
 .product {
@@ -105,6 +108,7 @@ nav {
     overflow: hidden;
     background-color: #f3f3f3;
     border-radius: 5px;
+    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 25%);
 }
 
 .product > img {
@@ -121,15 +125,15 @@ nav {
 }
 
 
+
 .productText > .text > h3 {
-    color: var(--primary-color);
     font-size: var(--font-twotwo);
     padding-block: 0.25rem;
     font-weight: var(--font-semibold);
 }
 
 .productText > .text > p {
-    color: var(--black-lite-var);
+    color: #000000a1;
     font-size: var(--font-onesix);
     padding-block: 0.25rem;
     overflow: hidden;
@@ -139,9 +143,11 @@ nav {
     max-height: 60px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    font-weight: var(--font-semibold);
 }
 
 .productText > .text > .price {
+    color: var(--primary-color);
     font-weight: var(--font-bold);
     font-size: var(--font-twotwo);
     margin-block: 0.25rem 0.5rem;
@@ -154,7 +160,7 @@ nav {
     flex-direction: row-reverse;
 }
 .product-buy-rating > button {
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
     font-size: var(--font-onesix);
     font-weight: var(--font-semibold);
     border: 2px solid var(--base-black);
