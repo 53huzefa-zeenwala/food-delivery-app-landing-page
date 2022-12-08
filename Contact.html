@@ -1,124 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza Landing Page</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/Contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="nav">
-        <div class="logo"><span>Fo</span>odie</div>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./Products.html">Products</a></li>
-          <li class="active"><a href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="btn-div">
-        <button><a href="./Registration.html">Register</a></button>
-        <button><a href="./Login.html">Login</a></button>
-      </div>
-    </nav>
-    <!--  main page start here -->
-    <main>
-      <h1>
-        Love to hear from you, <br />
-        Get in touch <span>👋</span>
-      </h1>
-      <form action="">
-        <section class="input">
-          <div>
-            <label for="name">Your name</label>
-            <input type="text" name="name" placeholder="John deo" required />
-          </div>
-          <div>
-            <label for="email">Your email</label>
-            <input
-              type="text"
-              name="email"
-              placeholder="johndeo@xxxx.com"
-              required
-            />
-          </div>
-        </section>
-        <section class="input">
-          <div>
-            <label for="contact">Your contact number</label>
-            <input
-              type="tel"
-              name="contact"
-              placeholder="+91xxxxxxxxxx"
-              required
-            />
-          </div>
-          <div>
-            <label for="interest">What are you intrested in</label>
-            <select name="interest" id="" required>
-              <option value="service">Customer service</option>
-              <option value="Order">Order</option>
-              <option value="consult">Consult</option>
-              <option value="complain">Complain</option>
-            </select>
-          </div>
-        </section>
-        <div class="textarea">
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id=""
-            minlength="10"
-            cols="30"
-            rows="10"
-            required
-            placeholder="Tell us about your consult"
-          ></textarea>
-        </div>
-        <button>Just Send ↗</button>
-      </form>
-    </main>
-
-    <footer>
-      <div class="heading-section">
-        <div class="logo"><span>Fo</span>odie</div>
-        <ul class="navLink">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./Products.html">Products</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <ul class="socialLink">
-          <li><img src="./img/facebook-svgrepo-com.svg" alt="" /></li>
-          <li><img src="./img/instagram-fill-svgrepo-com.svg" alt="" /></li>
-          <li><img src="./img/whatsapp-svgrepo-com.svg" alt="" /></li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <div class="aboutApp">
-          <h4>Foodie</h4>
-          <p>
-            We are with you every time just download our app and place orders
-          </p>
-        </div>
-        <div class="getApp">
-          <h4>Required the app</h4>
-          <div class="store-img">
-            <img src="./img/google-play.png" alt="Google Play" />
-            <img src="./img/app-store.png" alt="App Store" />
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="copyright">
-      All copyright is reserved by <span> Foodie Private Limited I.N.C </span>
+<head>
+  <title>Pizza Landing Page</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/Contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="nav">
+      <div class="logo"><span>Fo</span>odie</div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Products.html">Products</a></li>
+        <li class="active"><a href="Contact.html">Contact</a></li>
+      </ul>
     </div>
-  </body>
+    <div class="btn-div"><button><a href="./Registration.html">Register</a></button><button><a
+          href="./Login.html">Login</a></button></div>
+  </nav>
+  <main>
+    <h1>Love to hear from you, <br />Get in touch <span>👋</span></h1>
+    <form action="">
+      <section class="input">
+        <div><label for="name">Your name</label><input type="text" name="name" placeholder="John deo" required /></div>
+        <div><label for="email">Your email</label><input type="text" name="email" placeholder="johndeo@xxxx.com"
+            required /></div>
+      </section>
+      <section class="input">
+        <div><label for="contact">Your contact number</label><input type="tel" name="contact"
+            placeholder="+91xxxxxxxxxx" required /></div>
+        <div><label for="interest">What are you intrested in</label><select name="interest" id="" required>
+            <option value="service">Customer service</option>
+            <option value="Order">Order</option>
+            <option value="consult">Consult</option>
+            <option value="complain">Complain</option>
+          </select></div>
+      </section>
+      <div class="textarea"><label for="message">Message</label><textarea name="message" id="" minlength="10" cols="30"
+          rows="10" required placeholder="Tell us about your consult"></textarea></div><button>Just Send ↗</button>
+    </form>
+  </main>
+  <footer>
+    <div class="heading-section">
+      <div class="logo"><span>Fo</span>odie</div>
+      <ul class="socialLink">
+        <li><img src="./img/facebook-svgrepo-com.svg" alt="" /></li>
+        <li><img src="./img/instagram-fill-svgrepo-com.svg" alt="" /></li>
+        <li><img src="./img/whatsapp-svgrepo-com.svg" alt="" /></li>
+      </ul>
+    </div>
+    <div class="detail-section">
+      <div class="aboutApp">
+        <h4>Foodie</h4>
+        <p>We are with you every time just download our app and place orders </p>
+      </div>
+      <div class="getApp">
+        <h4>Required the app</h4>
+        <div class="store-img"><img src="./img/google-play.png" alt="Google Play" /><img src="./img/app-store.png"
+            alt="App Store" /></div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">All copyright is reserved by <span>Foodie Private Limited I.N.C </span></div>
+</body>
 </html>

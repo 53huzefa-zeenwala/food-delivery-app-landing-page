@@ -1,0 +1,18 @@
+nav{background-color:black; color:white}
+main{margin:0; padding:0}
+header{display:flex; justify-content:center; width:100%; overflow:hidden; height:48rem; align-items:center; padding:0}
+header>section{width:50%; padding-inline:5%}
+header>section>h1{font-size:var(--font-sixfour); font-weight:600}
+header>section>p{font-size:var(--font-onesix); padding-block:1rem; font-weight:500}
+header>section>.image{display:flex; width:100%; height:10rem; justify-content:space-between; align-items:center; overflow:hidden; margin-block:1rem}
+.image>img{height:100%; object-fit:cover; width:45%}
+header>img{width:50%; height:100%; z-index:10}
+main>section{padding-inline:5%}
+.paragraphs{display:flex; align-items:center; justify-content:space-between; margin-block:6rem}
+.paragraphs>p{width:30%}
+.paragraphs>.mainParagraph{font-weight:600; text-align:right; width:25%; font-size:1.25rem}
+.paragraphs>p:last-child{width:35%}
+.video{width:100%; height:26rem}
+.video>video{height:100%; width:100%; object-fit:cover}
+.extraParagraph{padding-block:2.5rem}
+.extraParagraph>p{text-align:center; padding-block:1rem; font-weight:500; font-size:var(--font-onesix)}
